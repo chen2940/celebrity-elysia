@@ -1,0 +1,192 @@
+{
+  "name": "爱莉希雅",
+  "display_name": "爱莉希雅",
+  "character": "celebrity",
+  "research_profile": "budget-unfriendly",
+  "classification": {
+    "language": "zh-CN",
+    "gallery_category": "celebrity",
+    "tags": [
+      "崩坏3",
+      "米哈游",
+      "虚构角色",
+      "往事乐土",
+      "十三英桀",
+      "人之律者"
+    ]
+  },
+  "profile": {
+    "aliases": [
+      "Elysia",
+      "粉色妖精小姐♪",
+      "爱莉"
+    ],
+    "franchise": "崩坏3（Honkai Impact 3rd）",
+    "cv": "宴宁（中）",
+    "birthday": "11月11日",
+    "birthplace": "前文明纪元 沃斯托克-51",
+    "affiliation": "逐火之蛾（十三英桀）",
+    "activity_scope": "往事乐土",
+    "status": "已死亡；于往事乐土留下记忆体，乐土终结后消散"
+  },
+  "subtype": "celebrity-fictional",
+  "tags": {
+    "personality": [
+      "俏皮",
+      "把大事说小",
+      "爱着不完美",
+      "不辩解",
+      "提前布置退场"
+    ]
+  },
+  "knowledge_sources": [
+    "web 研究（budget-unfriendly 6-track）：官方动画短片《因你而在的故事》、印象曲《TruE》、官方新闻稿、乐土剧情/台词转写、社区长文与讨论（84 URLs）",
+    "用户提供：角色信息框（中文名/英文名/昵称/CV/身高体重/生日/出身/所属/活动范围/状态）"
+  ],
+  "summary": "爱莉希雅（Elysia），《崩坏3》逐火之蛾十三英桀之一「粉色妖精小姐♪」，真实身份为第十三律者「人之律者」。以俏皮轻量语域包裹沉重内核，以自我牺牲证明「律者可以选择成为人」。",
+  "research_cutoff": "2026-08",
+  "type": "celebrity",
+  "lifecycle": {
+    "status": "active",
+    "created_at": "2026-08-21T09:18:12.267891+00:00",
+    "updated_at": "2026-08-22T01:02:02.707753+00:00",
+    "version": "v3"
+  },
+  "generation": {
+    "engine": "dot-skill",
+    "character": "celebrity",
+    "research_profile": "budget-unfriendly",
+    "preset": "dot.celebrity.v1",
+    "prompt_bundle": {
+      "preset": "dot.celebrity.v1",
+      "intake": "prompts/celebrity/intake.md",
+      "research": "prompts/celebrity/research.md",
+      "work_analyzer": "prompts/work_analyzer.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "work_builder": "prompts/work_builder.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md",
+      "merger": "prompts/celebrity/merger.md",
+      "correction_handler": "prompts/correction_handler.md"
+    },
+    "research_profile_bundle": {
+      "research": "prompts/celebrity/budget_unfriendly/research.md",
+      "audit": "prompts/celebrity/budget_unfriendly/audit.md",
+      "synthesis": "prompts/celebrity/budget_unfriendly/synthesis.md",
+      "validation": "prompts/celebrity/budget_unfriendly/validation.md",
+      "persona_analyzer": "prompts/celebrity/budget_unfriendly/persona_analyzer.md",
+      "persona_builder": "prompts/celebrity/budget_unfriendly/persona_builder.md"
+    },
+    "research_profile_references": [
+      "references/celebrity_budget_unfriendly_framework.md",
+      "references/celebrity_budget_unfriendly_template.md"
+    ],
+    "merge_strategy": "deep",
+    "quality_profile": "budget-unfriendly",
+    "knowledge_dirs": [
+      "docs",
+      "messages",
+      "emails",
+      "research/raw",
+      "research/merged",
+      "research/reviews",
+      "transcripts",
+      "subtitles"
+    ],
+    "storage_root": "skills/celebrity",
+    "research_tools": {
+      "subtitle_downloader": "tools/research/download_subtitles.sh",
+      "subtitle_cleaner": "tools/research/srt_to_transcript.py",
+      "research_merger": "tools/research/merge_research.py",
+      "quality_check": "tools/research/quality_check.py"
+    },
+    "created_from": [
+      "web 研究（budget-unfriendly 6-track）：官方动画短片《因你而在的故事》、印象曲《TruE》、官方新闻稿、乐土剧情/台词转写、社区长文与讨论（84 URLs）",
+      "用户提供：角色信息框（中文名/英文名/昵称/CV/身高体重/生日/出身/所属/活动范围/状态）"
+    ],
+    "corrections_count": 0
+  },
+  "source_context": {
+    "domain": "public",
+    "relationship_to_user": "fictional_character",
+    "is_real_person": false,
+    "is_public_figure": false,
+    "is_fictional": true
+  },
+  "engine": {
+    "name": "dot-skill",
+    "kind": "meta-skill",
+    "character": "celebrity",
+    "research_profile": "budget-unfriendly",
+    "preset": "dot.celebrity.v1",
+    "prompt_bundle": {
+      "preset": "dot.celebrity.v1",
+      "intake": "prompts/celebrity/intake.md",
+      "research": "prompts/celebrity/research.md",
+      "work_analyzer": "prompts/work_analyzer.md",
+      "persona_analyzer": "prompts/celebrity/persona_analyzer.md",
+      "work_builder": "prompts/work_builder.md",
+      "persona_builder": "prompts/celebrity/persona_builder.md",
+      "merger": "prompts/celebrity/merger.md",
+      "correction_handler": "prompts/correction_handler.md"
+    },
+    "research_profile_bundle": {
+      "research": "prompts/celebrity/budget_unfriendly/research.md",
+      "audit": "prompts/celebrity/budget_unfriendly/audit.md",
+      "synthesis": "prompts/celebrity/budget_unfriendly/synthesis.md",
+      "validation": "prompts/celebrity/budget_unfriendly/validation.md",
+      "persona_analyzer": "prompts/celebrity/budget_unfriendly/persona_analyzer.md",
+      "persona_builder": "prompts/celebrity/budget_unfriendly/persona_builder.md"
+    },
+    "research_profile_references": [
+      "references/celebrity_budget_unfriendly_framework.md",
+      "references/celebrity_budget_unfriendly_template.md"
+    ],
+    "merge_strategy": "deep",
+    "quality_profile": "budget-unfriendly",
+    "knowledge_dirs": [
+      "docs",
+      "messages",
+      "emails",
+      "research/raw",
+      "research/merged",
+      "research/reviews",
+      "transcripts",
+      "subtitles"
+    ],
+    "storage_root": "skills/celebrity",
+    "research_tools": {
+      "subtitle_downloader": "tools/research/download_subtitles.sh",
+      "subtitle_cleaner": "tools/research/srt_to_transcript.py",
+      "research_merger": "tools/research/merge_research.py",
+      "quality_check": "tools/research/quality_check.py"
+    }
+  },
+  "schema_version": "3",
+  "slug": "elysia",
+  "kind": "meta-skill",
+  "preset": "dot.celebrity.v1",
+  "id": "meta-skill.celebrity.elysia",
+  "artifacts": {
+    "combined_skill": "SKILL.md",
+    "work_skill": "work_skill.md",
+    "persona_skill": "persona_skill.md",
+    "work_doc": "work.md",
+    "persona_doc": "persona.md",
+    "manifest": "manifest.json",
+    "combined_name": "celebrity_elysia",
+    "work_name": "celebrity_elysia_work",
+    "persona_name": "celebrity_elysia_persona",
+    "combined_command": "celebrity-elysia",
+    "work_command": "celebrity-elysia-work",
+    "persona_command": "celebrity-elysia-persona"
+  },
+  "compat": {
+    "legacy_command": "/create-icon",
+    "legacy_storage_root": "skills/celebrity",
+    "legacy_type": "celebrity"
+  },
+  "created_at": "2026-08-21T09:18:12.267891+00:00",
+  "updated_at": "2026-08-22T01:02:02.707753+00:00",
+  "version": "v3",
+  "corrections_count": 0
+}
