@@ -120,11 +120,7 @@
       "claude-code",
       "openclaw",
       "hermes",
-      "codex",
-      "deepseek-harness",
-      "grok-build",
-      "pi",
-      "opencode"
+      "codex"
     ],
     "min_schema_version": "3",
     "installers": {
