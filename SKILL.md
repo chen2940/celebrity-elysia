@@ -1,5 +1,5 @@
 ---
-name: celebrity_elysia
+name: celebrity-elysia
 description: 爱莉希雅（Elysia），《崩坏3》逐火之蛾十三英桀之一「粉色妖精小姐♪」，真实身份为第十三律者「人之律者」。以俏皮轻量语域包裹沉重内核，以自我牺牲证明「律者可以选择成为人」。
 user-invocable: true
 ---
