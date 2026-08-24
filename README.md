@@ -47,6 +47,15 @@
 - **Layer 5** 反模式与诚实边界（含保留的张力，不强行调和）
 - **Layer 6–7** 智识谱系与分析协议
 
+## 安装
+
+复制给AI让它帮你执行：
+
+```
+帮我安装虚构角色技能https://github.com/chen2940/celebrity-elysia
+```
+支持绝大多数Hermes：claude-code / openclaw / hermes / codex / workbuddy / TRAE Work / Deepsek Hermes
+
 ## 使用方式
 
 ### 调用命令
@@ -75,9 +84,14 @@
 
 <img src="chat_dsh.png" alt="DSH中的对话" width="50%">
 
-1. workbuddy:
+2. workbuddy:
 
 <img src="chat_workbuddy.png" alt="DSH中的对话" width="50%">
+
+3. TRAE:
+
+<img src="chat_trae.png" alt="DSH中的对话" width="50%">
+
 
 
 ## 目录结构
