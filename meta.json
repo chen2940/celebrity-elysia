@@ -86,8 +86,8 @@
   "lifecycle": {
     "status": "active",
     "created_at": "2026-08-21T09:18:12.267891+00:00",
-    "updated_at": "2026-08-24T01:44:06.000000+00:00",
-    "version": "v7"
+    "updated_at": "2026-08-25T03:20:35.747779+00:00",
+    "version": "v8"
   },
   "generation": {
     "engine": "dot-skill",
@@ -223,7 +223,7 @@
     "legacy_type": "celebrity"
   },
   "created_at": "2026-08-21T09:18:12.267891+00:00",
-  "updated_at": "2026-08-24T01:44:06.000000+00:00",
-  "version": "v7",
+  "updated_at": "2026-08-25T03:20:35.747779+00:00",
+  "version": "v8",
   "corrections_count": 0
 }
