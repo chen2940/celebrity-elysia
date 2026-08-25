@@ -72,6 +72,7 @@ HOSTS = {
 IGNORE_NAMES = shutil.ignore_patterns(
     ".git", ".workbuddy", "__pycache__", "*.pyc", ".DS_Store",
     "*.zip",
+    "output",
 )
 
 

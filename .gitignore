@@ -1,1 +1,7 @@
 .workbuddy/
+
+# 打包产物目录：技能发布打包（zip/tar/安装包等）输出到这里，不纳入版本库。
+# 仅保留目录占位 .gitkeep 与使用说明 README.md。
+output/*
+!output/.gitkeep
+!output/README.md
