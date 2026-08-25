@@ -87,7 +87,7 @@ Agent 会识别当前宿主并克隆到正确的 skills 目录。
 | Harness | 安装路径（把仓库克隆到此处） |
 | --- | --- |
 | Claude Code | `~/.claude/skills/celebrity-elysia` |
-| OpenClaw | `~/.openclaw/workspace/skills/celebrity-elysia` |
+| OpenClaw | `~/.openclaw/skills/celebrity-elysia`（部分版本为 `~/.openclaw/workspace/skills/celebrity-elysia`） |
 | Codex | `~/.codex/skills/celebrity-elysia` |
 | Hermes | `~/.hermes/skills/celebrity-elysia` |
 | DeepSeek Harness（全局） | `~/.dsh/skills/celebrity-elysia` |
