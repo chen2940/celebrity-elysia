@@ -128,9 +128,18 @@
     ],
     "min_schema_version": "3",
     "installers": {
-      "claude-code": "tools/install_claude_generated_skill.py",
-      "openclaw": "tools/install_openclaw_generated_skill.py",
-      "codex": "tools/install_codex_generated_skill.py"
+      "universal": "tools/install.py",
+      "claude-code": "tools/install.py --host claude-code",
+      "openclaw": "tools/install.py --host openclaw",
+      "codex": "tools/install.py --host codex",
+      "hermes": "tools/install.py --host hermes",
+      "deepseek-harness": "tools/install.py --host dsh",
+      "workbuddy": "tools/install.py --host workbuddy",
+      "trae": "tools/install.py --host trae"
+    },
+    "one_liners": {
+      "bash": "curl -fsSL https://raw.githubusercontent.com/chen2940/celebrity-elysia/main/install.sh | bash",
+      "powershell": "irm https://raw.githubusercontent.com/chen2940/celebrity-elysia/main/install.ps1 | iex"
     },
     "slash_commands": {
       "default": "celebrity-elysia",

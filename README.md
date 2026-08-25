@@ -49,12 +49,61 @@
 
 ## 安装
 
-复制给AI让它帮你执行：
+本仓库本身就是标准的 AgentSkills 技能目录（根目录含 `SKILL.md`），几乎所有 Harness 都采用「把技能目录放进宿主 skills 目录」的发现方式，因此一个仓库即可兼容多个 Harness。
+
+### 方式 1：一条命令自动安装（推荐）
+
+脚本会自动检测本机装了哪些 Harness，并复制到对应 skills 目录：
+
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/chen2940/celebrity-elysia/main/install.sh | bash
+```
+
+```powershell
+# Windows (PowerShell)
+irm https://raw.githubusercontent.com/chen2940/celebrity-elysia/main/install.ps1 | iex
+```
+
+可选参数（追加在命令后）：
+
+```bash
+# 只装到指定 Harness，并覆盖已有安装
+curl -fsSL https://raw.githubusercontent.com/chen2940/celebrity-elysia/main/install.sh | bash -s -- --host claude-code,workbuddy --force
+```
+
+### 方式 2：让 AI 帮你装
+
+在任意 Harness 里直接说：
 
 ```
-帮我安装虚构角色技能https://github.com/chen2940/celebrity-elysia
+帮我安装虚构角色技能 https://github.com/chen2940/celebrity-elysia
 ```
-支持绝大多数Hermes：claude-code / openclaw / hermes / codex / workbuddy / TRAE Work / Deepsek Hermes
+
+Agent 会识别当前宿主并克隆到正确的 skills 目录。
+
+### 方式 3：手动克隆（各宿主路径）
+
+| Harness | 安装路径（把仓库克隆到此处） |
+| --- | --- |
+| Claude Code | `~/.claude/skills/celebrity-elysia` |
+| OpenClaw | `~/.openclaw/workspace/skills/celebrity-elysia` |
+| Codex | `~/.codex/skills/celebrity-elysia` |
+| Hermes | `~/.hermes/skills/celebrity-elysia` |
+| DeepSeek Harness（全局） | `~/.dsh/skills/celebrity-elysia` |
+| DeepSeek Harness（项目） | `<项目>/.dsh/skills/celebrity-elysia` |
+| WorkBuddy | `~/.workbuddy/skills/celebrity-elysia` |
+| TRAE Work | `~/.trae/skills/celebrity-elysia` |
+
+示例：
+
+```bash
+git clone https://github.com/chen2940/celebrity-elysia.git ~/.claude/skills/celebrity-elysia
+```
+
+安装后重启（或重载）Harness，即可通过 `/celebrity-elysia`（Claude Code / OpenClaw / Hermes / DSH）或技能名 `celebrity-elysia`（Codex / WorkBuddy / TRAE）调用。
+
+> 兼容性说明：本技能采用官方 [AgentSkills](https://agentskills.io) 标准（根目录 `SKILL.md` + frontmatter），Claude Code / OpenClaw / Codex / Hermes / DeepSeek Harness / WorkBuddy / TRAE Work 均以文件系统方式发现技能，无需额外插件清单。
 
 ## 使用方式
 
