@@ -15,8 +15,11 @@
     "SKILL.md",
     "work.md",
     "persona.md",
+    "work_skill.md",
+    "persona_skill.md",
     "meta.json",
-    "manifest.json"
+    "manifest.json",
+    "knowledge/docs/bh3text_canon.md"
   ],
   "capabilities": [
     "persona",

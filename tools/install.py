@@ -156,8 +156,13 @@ def install_to_host(
             "source": str(source),
             "installed_at": now_iso(),
             "installer": "tools/install.py",
-            "version": "v7",
         }
+        try:
+            skill_meta = json.loads((install_dir / "meta.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            skill_meta = {}
+        if isinstance(skill_meta, dict) and isinstance(skill_meta.get("version"), str):
+            metadata["version"] = skill_meta["version"]
         (install_dir / ".install-metadata.json").write_text(
             json.dumps(metadata, ensure_ascii=False, indent=2),
             encoding="utf-8",
